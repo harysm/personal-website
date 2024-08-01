@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color:#EEEEEE;
+}
+
+.animate-a {
+    @apply translate-x-5 3s linear infinite;
+}
+
+
+.navbar-fixed {
+    @apply fixed z-[9999] 
+    bg-gray-300 bg-opacity-40 backdrop-blur-md;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0, );
+}
+
+.ham-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white;
+}
+
+.ham-menu {
+    @apply text-base text-dark py-2 mx-8 flex transition duration-200 ease-in-out justify-center dark:lg:text-white  hover:text-primary hover:scale-110  ;
+}
+
+.ham-act > span:nth-child(1) {
+    @apply -rotate-45;
+}
+
+.ham-act > span:nth-child(2) {
+    @apply -rotate-180 scale-0;
+}
+
+.ham-act > span:nth-child(3) {
+    @apply  rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+}
+
+
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+::-webkit-scrollbar-track {
+
+    @apply dark:bg-darkmode;
+    background: #eeeeee;
+
+
+}
+::-webkit-scrollbar-thumb {
+
+    background: #888;
+    border-radius: 5px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+
+    background: #555;
+
+}
