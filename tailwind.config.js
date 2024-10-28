@@ -3,6 +3,7 @@ module.exports = {
   content: ['index.html'],
   darkMode: 'class',
   theme: {
+      font-family: 'Gowun Dodum',
     container : {
       center :true,
       padding :'16px',
