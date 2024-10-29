@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: "Gowun Dodum";
+    font-family: sans-serif;
     background-color:#EEEEEE;
 }
 
